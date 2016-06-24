@@ -38,8 +38,6 @@ class URL(Resource):
         URLS[url_id] = url
         return url, 201
 
-#http://flask-restful-cn.readthedocs.io/en/0.3.5/quickstart.html
-#Todolist - shows all the todolist IDs
 
 class URLList(Resource):
     def get(self):
@@ -63,12 +61,6 @@ if __name__ == '__main__':
 
 
 
-# curl http://localhost:5000/url
-# curl http://localhost:5000/url -d 'url=http://www.apache.org/' -X POST -v
-# curl http://localhost:5000/url/url4 -d 'url=http://www.vish.com/' -X PUT -v
-# curl http://localhost:5000/url/url4 -X DELETE -v
-
-# curl http://flask-env.ruerphgqqw.us-west-2.elasticbeanstalk.com/url/url6 -X DELETE -v
 
 
 
