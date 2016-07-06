@@ -19,8 +19,7 @@ def abort_if_url_doesnt_exist(url_id):
 parser = reqparse.RequestParser()
 parser.add_argument('url')
 
-#Todo
-# shows a singlevtodo item and lets ou delete atodo item
+
 
 class URL(Resource):
     def get(self, url_id):
